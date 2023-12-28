@@ -28,9 +28,7 @@ class Hanoi(object):
             self.move_tower(n-1,w,d,s)
     
     def solve(self):
-        self.move_tower(self.start.size,self.start,self.destination,self.workspace)
+        self.move_tower(3, self.start,self.destination,self.workspace)
 
 h = Hanoi()
 h.solve()
-
-        
