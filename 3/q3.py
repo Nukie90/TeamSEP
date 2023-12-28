@@ -1,4 +1,4 @@
-
+from q2 import Pole
 
 class Hanoi(object):
     def __init__(self, n=3,start="A",workspace="B",destination="C"):
