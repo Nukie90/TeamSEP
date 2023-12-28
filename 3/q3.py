@@ -1,3 +1,4 @@
+from q1 import Disk
 from q2 import Pole
 
 class Hanoi(object):

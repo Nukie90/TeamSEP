@@ -31,13 +31,14 @@ class Pole(object):
         t.pendown()
         
     def pushdisk(self, disk):
-        disk.setx(self.pxpos)
-        disk.sety(self.toppos + self.pypos)
-        self.toppos += disk.getthick()
+        disk.newpos(self.pxpos, self.toppos + self.pypos)
+        disk.showdisk()
         self.stack.append(disk)
+        self.toppos += disk.dheight
 
     def popdisk(self):
         disk = self.stack.pop()
-        self.toppos -= disk.getthick()
+        disk.cleardisk()
+        self.toppos -= disk.dheight
         return disk
     
