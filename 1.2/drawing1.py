@@ -21,6 +21,8 @@ class Simple_drawing_window1(QWidget):
         p.drawEllipse(350, 350, 100, 100)
         p.drawEllipse(500, 350, 100, 100)
         
+        p.drawPixmap(QRect(400, 100, 320, 320), self.rabbit)
+        
         p.end()
         
 def main():
