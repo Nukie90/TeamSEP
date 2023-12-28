@@ -1,7 +1,7 @@
 import turtle as t
 
 class Disk(object):
-    def __init__(self, name="", xpos=0, ypos=0, height=20, width=20):
+    def __init__(self, name="", xpos=0, ypos=0, width=20, height=20):
         self.dname = name
         self.dxpos = xpos
         self.dypos = ypos
@@ -16,15 +16,15 @@ class Disk(object):
         self.t.pendown()
         
         self.t.setheading(0)
-        self.t.forward(self.dheight/2)
-        self.t.left(90)
-        self.t.forward(self.dwidth)
+        self.t.forward(self.dwidth/2)
         self.t.left(90)
         self.t.forward(self.dheight)
         self.t.left(90)
         self.t.forward(self.dwidth)
         self.t.left(90)
-        self.t.forward(self.dheight/2)
+        self.t.forward(self.dheight)
+        self.t.left(90)
+        self.t.forward(self.dwidth/2)
         self.t.setheading(0)
     
     def newpos(self, xpos, ypos):
