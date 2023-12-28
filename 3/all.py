@@ -16,15 +16,15 @@ class Disk(object):
         self.t.pendown()
         
         self.t.setheading(0)
-        self.t.forward(self.dwidth/2)
-        self.t.left(90)
-        self.t.forward(self.dheight)
+        self.t.forward(self.dheight/2)
         self.t.left(90)
         self.t.forward(self.dwidth)
         self.t.left(90)
         self.t.forward(self.dheight)
         self.t.left(90)
-        self.t.forward(self.dwidth/2)
+        self.t.forward(self.dwidth)
+        self.t.left(90)
+        self.t.forward(self.dheight/2)
         self.t.setheading(0)
     
     def newpos(self, xpos, ypos):
